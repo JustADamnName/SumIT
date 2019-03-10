@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SumIT - Everything you need for IT</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"></head>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	<link rel="stylesheet" href="Contact.css">
+</head>
+<body>
+    <!--- Navigation Bar -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand"><img src="img/Sumit.png"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="Home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Summaries.html">Summaries</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Tutorials.html">Tutorials</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Self-help.html">Self-help</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Testimonials.html">Testimonials</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Contact.html">Contact</a>
+                </li>	
+            </ul>
+        </div>
+    </nav> <!--- End Navigation Bar -->
+
+    <div class="container"> <!-- Start Container -->
+        <div class="row"> <!-- Start Row -->
+            <div class="col-md-7"> <!-- Start Left Descriptions -->
+                <h1 id="Title">Contact Us</h1>
+                <p class="lead" id="Details">
+                    Want to save other IT newbs?
+                    <br>
+                    Have a lot of crazy ideas?
+                    <br><br>
+                    What are you waiting for?
+                    <br>
+                    Enter your details and contact us, <mark> right now >></mark>
+                </p>
+            </div> <!-- End Left Descriptions -->
+
+            <div id="FormBackground" class="col-md-5"> <!-- Start Registration Form -->
+                <div class="row FormHeading"> <!-- Start Form Heading-->
+                    <div class="col-md-10">
+                        <h1 id="FormTitle">This, is me!</h1>
+                    </div>
+                    
+                    <div class="col-md-2">
+                        <i class="fas fa-pencil-alt fa-2x" style="color: white; float: right"></i>
+                    </div>
+                    <hr>
+                </div> <!-- End Form Heading-->
+
+                <div class="row"> <!-- Start Email -->
+                    <div class="col-md-3">
+                        <label class="LeftLabels">Email</label>
+                    </div>
+                    <div class="col-md-9">
+                        <input list="RMITemails" type="email" name="Email" class="UserInput" placeholder="Your E-mail">
+                        <datalist id="RMITemails">
+                            <option value="s1234567@rmit.edu.vn">
+                            <option value="s6969696@rmit.edu.vn">
+                            <option value="s1010101@rmit.edu.vn">
+                            <option value="s0101010@rmit.edu.vn">
+                            <option value="s0009000@rmit.edu.vn">
+                        </datalist>
+                    </div>
+                </div> <!-- End Email-->
+
+                <div class="row"> <!-- Begin Message-->
+                    <div class="col-md-3">
+                        <label class="LeftLabels">Message</label>
+                    </div>
+                    <div class="col-md-9">
+                        <textarea class="UserInput" name="message" cols="30" rows="3" placeholder="Your message"></textarea>
+                    </div>
+                </div> <!-- End Message -->
+
+                <div class="row"> <!-- Start Others -->
+                    <div class="col-md-3">
+                        <label class="LeftLabels">Others</label>
+                    </div>
+                    <div class="col-md-9">
+                        <input type="file" name="Others" style="margin-top: 1rem; color: white">
+                    </div>
+                </div> <!-- End Others-->
+                
+                <a href="mailto:chick.little007@gmail.com"><div class="btn btn-info">Send</div></a>
+            </div> <!-- End Registration Form -->
+        </div> <!-- End Row -->
+    </div> <!-- End Container -->
+</body>
+<!--- Script Source Files -->
+<script src="https://code.jquery.com/jquery-2.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.10/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script><!-- End Script Files-->
+<!--- End of Script Source Files -->
+</html>

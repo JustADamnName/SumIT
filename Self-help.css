@@ -1,0 +1,87 @@
+body {
+  background: rgb(80, 80, 80);
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color:#000;
+  margin: 0;
+  padding: 0;
+}
+
+/*== Navigation Bar ==*/
+.navbar{
+  font-size: 1.2rem;
+  letter-spacing: .1rem;
+  background: rgba(0, 0, 0, 0.66)!important;
+}
+
+.navbar-brand img{
+  height: 3rem;
+}
+
+.navbar-nav li{
+  padding-right: .7rem;
+}
+
+.navbar-dark .navbar-nav .nav-link{
+  color: white;
+  padding-top: .8rem;
+}
+
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover{
+  color: #99f8f3;
+}
+
+/*Motivation*/
+.Header h1{
+  color: rgb(255, 145, 0);
+}
+
+.Header p{
+  color: rgb(0, 225, 255);
+}
+
+#motivation h2{
+  color: red;
+}
+
+#motivation img{
+  border-radius: 2rem 2rem 0 0;
+}
+
+.swiper-container-music, .swiper-container-motivation {
+  width: 100%;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  text-align: center;
+  margin-top: -2.5rem;
+}
+#motivation .swiper-slide {
+  background-size: cover;
+  width: 250px;
+  height: 330px;
+  background: #6bff66;
+  border-radius: 2rem;
+  color: rgb(252, 0, 218);
+  font-weight: bold;
+}
+
+/*Study Music*/
+#music h3{
+  color: rgb(255, 50, 245);
+}
+
+#music .swiper-slide {
+  background-size: cover;
+  width: 400px;
+  height: 340px;
+  background: #66ff66;
+  border-radius: 2rem;
+}
+
+#music .img {
+  background-size: cover;
+  width: 400px;
+  height: 300px;
+  border-radius: 2rem 2rem 0 0;
+}

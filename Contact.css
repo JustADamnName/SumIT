@@ -1,0 +1,126 @@
+/*== Body ==*/
+body{
+    background-image: url(img/qmby1s.jpg);
+    background-size: cover; /*Fill to fullscreen*/
+    background-attachment: fixed; /*Fixed view, not scroll view*/
+    font-family: Helvetica, sans-serif;
+}
+
+/*== Navigation Bar ==*/
+.navbar{
+    font-size: 1.2rem;
+    letter-spacing: .1rem;
+    background: rgba(0, 0, 0, 0.66)!important;
+  }
+  
+  .navbar-brand img{
+    height: 3rem;
+  }
+  
+  .navbar-nav li{
+    padding-right: .7rem;
+  }
+  
+  .navbar-dark .navbar-nav .nav-link{
+    color: white;
+    padding-top: .8rem;
+  }
+  
+  .navbar-dark .navbar-nav .nav-link.active,
+  .navbar-dark .navbar-nav .nav-link:hover{
+    color: #99f8f3;
+  }
+
+/*== Description==*/
+#Title{
+    font-size: 40px;
+    color: white;
+    margin-top: 250px;
+    font-weight: bold;
+}
+#Details{
+    font-size: 16px;
+    color: white;
+}
+
+/*== Form ==*/
+#FormTitle{
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+}
+.FormHeading{
+    padding: 2rem 2rem;
+}
+#FormBackground{
+    margin-top: 9.5rem;
+    box-shadow: -1px 1px 60px 10px rgb(124, 201, 236);
+    background: rgba(80, 80, 80, 0.4);
+    border-radius: 4rem;
+}
+hr{
+    border: solid .5px white;
+    width: 94%;
+    color: white;
+    margin-bottom: -1rem;
+}
+.LeftLabels{
+    color: white;
+    font-size: 16px;
+    margin-left: 2rem;
+    margin-top: 1rem;
+}
+.UserInput{
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid white; 
+    font-size: 16px;
+    width: 18.5rem;
+    margin-top: 1rem;
+    color: white;
+}
+::placeholder{
+    color: white;
+}
+small{
+    color: white;
+    margin-left: .5rem;
+    font-size: 16px;
+}
+option{
+    color: black;
+    /*Center text????*/
+}
+.btn{
+    margin: 2rem 11rem;
+    margin-bottom: 2rem;
+}
+
+mark{
+    background: rgb(35, 19, 255);
+    border: 0px solid;
+    border-radius: 1rem;
+    color: orange;
+    font-weight: bold;
+}
+  
+  
+  /*============ BOOTSTRAP BREAK POINTS:
+  
+  Extra small (xs) devices (portrait phones, less than 576px)
+  No media query since this is the default in Bootstrap
+  
+  Small (sm) devices (landscape phones, 576px and up)
+  @media (min-width: 576px) { ... }
+  
+  Medium (md) devices (tablets, 768px and up)
+  @media (min-width: 768px) { ... }
+  
+  Large (lg) devices (desktops, 992px and up)
+  @media (min-width: 992px) { ... }
+  
+  Extra (xl) large devices (large desktops, 1200px and up)
+  @media (min-width: 1200px) { ... }
+  
+  =============*/
+  

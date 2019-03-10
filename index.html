@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SumIT - Everything you need for IT</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"></head>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+</head>
+<body>
+    <div class="row" id="Form">
+        <div class="col-md-12">
+            <form action="Home.html" method="POST" onclick="return validation()">
+                    <div class="row" style="justify-content: center">
+                        <i class="fas fa-door-open fa-3x" style="padding-right: 1rem;"></i>
+                        <h2>Log In</h2>   
+                    </div>
+                    <hr>
+                    <div class="row" id="ErrorMessage"></div>
+                    
+                    <div class="row">
+                        <i class="InputIcon fas fa-user"></i>
+                        <input class="UserInput" id="Username" type="text"  placeholder="Username">
+                    </div>
+        
+                    <div class="row">
+                        <i class="InputIcon fas fa-lock"></i>
+                        <input class="UserInput" id="Password" type="password"  placeholder="Password">
+                    </div>
+                    
+                    <input class="SuperFancyButton" type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+</body>
+<!--- Script Source Files -->
+<script src="https://code.jquery.com/jquery-2.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.10/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script><!-- End Script Files-->
+<!--- End of Script Source Files -->
+
+<!-- Begin validation -->
+<script>
+    function validation(){
+        var username = document.getElementById('Username').value;
+        var password = document.getElementById('Password').value;
+    if(username == '' || password == ''){
+        document.getElementById('ErrorMessage').innerHTML = "All fields: required";
+        document.getElementById('ErrorMessage').style.color = "#ff0000";
+        return false;
+    }
+    
+    else if (username.length < 6){
+        document.getElementById('ErrorMessage').innerHTML = "Username: 6 characters minimum";
+        document.getElementById('ErrorMessage').style.color = "#ff0000";
+        return false;
+    }
+    else if (password.length < 6){
+        document.getElementById('ErrorMessage').innerHTML = "Password: 6 characters minimum";
+        document.getElementById('ErrorMessage').style.color = "#ff0000";
+        return false;
+    }
+    else{
+        document.getElementById('ErrorMessage').innerHTML = "Cool! Good to go, buddy!";
+        document.getElementById('ErrorMessage').style.color = "#007700";
+        return true;
+    }
+    }
+</script> <!-- End validation -->
+</html>

@@ -1,0 +1,106 @@
+/*== Body ==*/
+body{
+    background-image: url(img/Sci-Fi-Science-Fiction-Planets-Alien-Sky-1920-x-1200.jpg);
+    background-size: cover;
+    font-family: Helvetica, sans-serif;
+}
+h2{
+  color: brown;
+  font-family: 'Dancing Script', cursive;
+  font-size: 2.6rem;
+}
+i{
+  color: brown;
+  float: right;
+}
+hr{
+  border: 3px solid brown;
+  margin-bottom: 2rem;
+  width: 40%;
+}
+
+#Form{
+  margin: 9.1rem 32rem;
+  box-shadow: -1px 1px 60px 10px rgb(100, 255, 115);
+  background: rgba(100, 255, 115, 0.6);
+  border: 0;
+  border-radius: 4rem;
+  padding: 1.5rem;
+}
+
+.InputIcon{
+  color: rgb(132, 0, 255);
+}
+
+.UserInput{
+  border: 0;
+  border-bottom: 1px solid rgb(132, 0, 255);
+  background-color: transparent;
+  color: rgb(132, 0, 255);
+  margin-bottom: 1.5rem;
+  margin-left: .5rem;
+  height: 1.5rem;
+  width: 17rem;
+}
+.UserInput::placeholder{
+  color: rgb(132, 0, 255);
+}
+
+#ErrorMessage{
+  justify-content: center;
+  font-family: 'Dancing Script', cursive;
+  font-weight: bolder;
+  font-size: 1.4rem;
+  padding-bottom: 1rem;
+  margin-top: -1rem;
+}
+
+.SuperFancyButton{
+  margin-left: 5.5rem;
+  color: white;
+  background: linear-gradient(90deg,#f441a5, #ffeb3b, #03a9f4,#f441a5);
+  background-size: 400%; /*Zoon in to get the right color combination*/
+  /*Set the width & height of the button*/
+ width: 5rem;
+ height: 2rem;
+ /*End seting width & height*/
+ border-radius: 2rem;
+}
+.SuperFancyButton:hover
+{
+ animation: animate 5s linear infinite;
+ /*3s: time to scan the whole hidden background, used to adjust animation speed*/
+ /*linear: to scan the background from left to right*/
+ /*infinite: loop the animation*/
+}
+@keyframes animate
+{
+ 0%
+ {
+  background-position: 0%; /*Set beginning position to the left most of the hidden background*/
+ }
+ 100%
+ {
+  background-position: 400%; /*Set ending position to the right most of the hidden background*/
+ }
+}
+  
+  /*============ BOOTSTRAP BREAK POINTS:
+  
+  Extra small (xs) devices (portrait phones, less than 576px)
+  No media query since this is the default in Bootstrap
+  
+  Small (sm) devices (landscape phones, 576px and up)
+  @media (min-width: 576px) { ... }
+  
+  Medium (md) devices (tablets, 768px and up)
+  @media (min-width: 768px) { ... }
+  
+  Large (lg) devices (desktops, 992px and up)
+  @media (min-width: 992px) { ... }
+  
+  Extra (xl) large devices (large desktops, 1200px and up)
+  @media (min-width: 1200px) { ... }
+  
+  =============*/
+  

@@ -1,7 +1,7 @@
 /*== Body ==*/
 body{
     background-image: url(img/Sci-Fi-Science-Fiction-Planets-Alien-Sky-1920-x-1200.jpg);
-    background-size: cover;
+    background-size: 100%;
     font-family: Helvetica, sans-serif;
 }
 h2{
@@ -19,8 +19,17 @@ hr{
   width: 40%;
 }
 
+#VerticalCenter{
+  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh; /* These two lines are counted as one :-)       */
+
+  display: flex;
+  align-items: center;
+}
+
 #Form{
-  margin: 9.1rem 32rem;
+  margin: auto; /*center horizontally*/
+  width: 22rem;
   box-shadow: -1px 1px 60px 10px rgb(100, 255, 115);
   background: rgba(100, 255, 115, 0.6);
   border: 0;

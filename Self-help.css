@@ -9,13 +9,13 @@ body {
 
 /*== Navigation Bar ==*/
 .navbar{
-  font-size: 1.2rem;
-  letter-spacing: .1rem;
+  font-size: 1.4vw;
+  letter-spacing: .11vw;
   background: rgba(0, 0, 0, 0.66)!important;
 }
 
 .navbar-brand img{
-  height: 3rem;
+  height: 3.5vw;
 }
 
 .navbar-nav li{
@@ -30,7 +30,7 @@ body {
 .navbar-dark .navbar-nav .nav-link.active,
 .navbar-dark .navbar-nav .nav-link:hover{
   color: #99f8f3;
-}
+}  
 
 /*Motivation*/
 .Header h1{
@@ -85,3 +85,13 @@ body {
   height: 300px;
   border-radius: 2rem 2rem 0 0;
 }
+
+@media (max-width: 768px) {
+  .navbar-brand img{
+    height: 3rem;
+  }
+
+  .navbar{
+    font-size: .8rem;
+    letter-spacing: .1rem;
+  }

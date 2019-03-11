@@ -5,22 +5,15 @@ body{
   color: #505962;
 }
 
-.offset:before{
-  display: block;
-  content: "";
-  height: 4rem;
-  margin-top: -4rem;
-}
-
 /*== Navigation Bar ==*/
 .navbar{
-  font-size: 1.2rem;
-  letter-spacing: .1rem;
+  font-size: 1.4vw;
+  letter-spacing: .11vw;
   background: rgba(0, 0, 0, 0.66)!important;
 }
 
 .navbar-brand img{
-  height: 3rem;
+  height: 3.5vw;
 }
 
 .navbar-nav li{
@@ -38,6 +31,12 @@ body{
 }
 
 /*-- Landing Page --*/
+.picture img{
+  width: 100%;
+  height: 20%;
+  position: relative;
+  z-index: -1;
+}
 
 .caption{
   width: 100%;
@@ -49,17 +48,16 @@ body{
 }
 
 .caption h1{
-  font-size: 3.8rem;
+  font-size: 5vw;
   font-weight: 700;
-  letter-spacing: .3rem;
+  letter-spacing: .3vw;
   text-shadow: .1rem, .1rem .8rem black;
-  padding-bottom: 1rem;
+  padding-bottom: .6vw;
 }
 
 .caption h3{
-  font-size: 2rem;
+  font-size: 2.5vw;
   text-shadow: .1rem .1rem .5rem black;
-  padding-bottom: 1.6rem;
 }
 
 .btn-lg{
@@ -126,16 +124,21 @@ h3.heading{
 }
 
 .Tutorials h3{
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   text-transform: uppercase;
   padding-bottom: .4rem;
 }
 
 .Tutorials p{
-  font-size: 1.1rem;
+  font-size: 1.2rem;
 }
 
-/*== Resources ==*/
+/*== Self-help ==*/
+#Self-help .image{
+  padding: 7vw 0;
+  color: white;
+}
+
 .fixed{
   background-image: url(img/maxresdefault.jpg);
   z-index: -1;
@@ -144,7 +147,7 @@ h3.heading{
 .dark{
   background-color: rgba(0, 0, 0, 0.30);
   color: white;
-  padding: 7rem 2rem;
+  position: relative;
 }
 
 .fixed-background h3{
@@ -200,6 +203,29 @@ hr.socket{
   width: 100%;
   border-top: .2rem solid #666b71;
   margin-top: 3rem;
+}
+
+@media (max-width: 768px) {
+  .navbar-brand img{
+    height: 3rem;
+  }
+
+  .navbar{
+    font-size: .8rem;
+    letter-spacing: .1rem;
+  }
+
+  .caption h1{
+    font-size: 1.8rem;
+    font-weight: 700;
+    letter-spacing: .1rem;
+    text-shadow: .1rem, .1rem .8rem black;
+    padding-bottom: .4rem;
+  }
+  
+  .caption h3{
+    font-size: 1.2rem;
+  }
 }
 
 /*============ BOOTSTRAP BREAK POINTS:

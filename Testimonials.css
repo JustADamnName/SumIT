@@ -7,28 +7,28 @@ body{
   
 /*== Navigation Bar ==*/
 .navbar{
-  font-size: 1.4vw;
-  letter-spacing: .11vw;
+  font-size: 1rem;
+  letter-spacing: .1rem;
   background: rgba(0, 0, 0, 0.66)!important;
-}
-
-.navbar-brand img{
-  height: 3.5vw;
-}
-
-.navbar-nav li{
-  padding-right: .7rem;
-}
-
-.navbar-dark .navbar-nav .nav-link{
+  }
+  
+  .navbar-brand img{
+  height: 3rem;
+  }
+  
+  .navbar-nav li{
+  padding-right: .7vw;
+  }
+  
+  .navbar-dark .navbar-nav .nav-link{
   color: white;
   padding-top: .8vw;
-}
-
-.navbar-dark .navbar-nav .nav-link.active,
-.navbar-dark .navbar-nav .nav-link:hover{
+  }
+  
+  .navbar-dark .navbar-nav .nav-link.active,
+  .navbar-dark .navbar-nav .nav-link:hover{
   color: #99f8f3;
-}
+  }
   
 /*-- Landing Page --*/
 .dark{
@@ -135,20 +135,21 @@ body{
   }
   
   /*== Resize t Tablets' size ==*/
-  @media (max-width: 767px){
-  .caption{
-    top: 40%;
+  @media (max-width: 768px){
+  .navbar{
+    font-size: .8rem;
   }
-  
+
   .caption h1{
-    font-size: 2.3rem;
-    letter-spacing: .15rem;
-    padding-bottom: .5rem;
+    font-size: 1.8rem;
+    font-weight: 700;
+    letter-spacing: .1rem;
+    text-shadow: .1rem, .1rem .8rem black;
+    padding-bottom: .4rem;
   }
   
   .caption h3{
     font-size: 1.2rem;
-    padding-bottom: 1.2rem;
   }
   
   .btn-lg{
@@ -166,28 +167,8 @@ body{
     margin: 0 auto;
   }
 
-  @media (max-width: 768px) {
-    .navbar-brand img{
-      height: 3rem;
-    }
-  
-    .navbar{
-      font-size: .8rem;
-      letter-spacing: .1rem;
-    }
-  
-    .caption h1{
-      font-size: 1.8rem;
-      font-weight: 700;
-      letter-spacing: .1rem;
-      text-shadow: .1rem, .1rem .8rem black;
-      padding-bottom: .4rem;
-    }
-    
-    .caption h3{
-      font-size: 1.2rem;
-    }
-  }
+
+}
   
   /*============ BOOTSTRAP BREAK POINTS:
   
@@ -207,4 +188,3 @@ body{
   @media (min-width: 1200px) { ... }
   
   =============*/
-  

@@ -47,14 +47,14 @@
         <div class="row"> <!-- Start Row -->
             <div class="col-md-7"> <!-- Start Left Descriptions -->
                 <h1 id="Title">Contact Us</h1>
-                <p class="lead" id="Details">
+                <p class="lead" id="Paragraph">
                     Want to save other IT newbs?
                     <br>
                     Have a lot of crazy ideas?
                     <br><br>
                     What are you waiting for?
                     <br>
-                    Enter your details and contact us, <mark> right now</mark>
+                    Enter your details and contact us, <ins>right now</ins>
                 </p>
             </div> <!-- End Left Descriptions -->
 
@@ -86,25 +86,35 @@
                     </div>
                 </div> <!-- End Email-->
 
-                <div class="row"> <!-- Begin Message-->
+                <div class="row"> <!-- Begin Ideas-->
                     <div class="col-md-3">
-                        <label class="LeftLabels">Message</label>
+                        <label class="LeftLabels">Ideas</label>
                     </div>
                     <div class="col-md-9">
-                        <textarea class="UserInput" name="message" cols="30" rows="3" placeholder="Your message"></textarea>
+                        <textarea class="UserInput" name="ideas" cols="30" rows="3" placeholder="Your ideas"></textarea>
                     </div>
-                </div> <!-- End Message -->
+                </div> <!-- End Ideas -->
 
-                <div class="row"> <!-- Start Others -->
+                <div class="row"> <!-- Start Details -->
                     <div class="col-md-3">
-                        <label class="LeftLabels">Others</label>
+                        <label class="LeftLabels">Details</label>
                     </div>
                     <div class="col-md-9">
-                        <input type="file" name="Others" style="margin-top: 1rem; color: white">
+                        <input type="file" name="Details" style="margin-top: 1rem; color: white">
                     </div>
-                </div> <!-- End Others-->
+                </div> <!-- End Details-->
+
+                <div class="row"> <!-- Start Location -->
+                    <div class="col-md-3">
+                        <label class="LeftLabels">Location</label>
+                    </div>
+                    <div class="col-md-9">
+                        <button onclick="getLocation()" id="LocateMe" style="margin-top: 1rem">Locate me!</button>
+                        <p id="Location"  style="margin-top: 1rem"></p>
+                    </div>
+                </div> <!-- End Location-->
                 
-                <a href="mailto:chick.little007@gmail.com"><div class="btn btn-info">Send</div></a>
+                <a href="#"><div class="btn btn-info">Send</div></a>
             </div> <!-- End Registration Form -->
         </div> <!-- End Row -->
     </div> <!-- End Container -->
@@ -113,5 +123,24 @@
 <script src="js/jquery-3.3.1.min.js"></script>
 <script src="bootstrap-4.1.3-dist/js/bootstrap.min.js"></script>
 <script src="https://use.fontawesome.com/releases/v5.5.0/js/all.js"></script>
+
+<script>
+    var x = document.getElementById("Location");
+    var y = document.getElementById('LocateMe');
+    function getLocation() {
+      if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition);
+      } else {
+        x.innerHTML = "Geolocation is not supported by this browser.";
+      }
+    }
+    
+    function showPosition(position) {
+        y.parentNode.removeChild(y);
+      x.innerHTML = "Latitude: " + position.coords.latitude + 
+      "<br>Longitude: " + position.coords.longitude; 
+      x.style.color = "white";
+    }
+</script>
 <!--- End of Script Source Files -->
 </html>

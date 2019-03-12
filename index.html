@@ -14,7 +14,7 @@
     <div id="VerticalCenter">
         <div class="row" id="Form">
                 <div class="col-md-12">
-                    <form action="Home.html" onclick="return validation()">
+                    <form action="Home.html" onsubmit="return validation()">
                             <div class="row" style="justify-content: center">
                                 <i class="fas fa-door-open fa-3x" style="padding-right: 1rem;"></i>
                                 <h2>Log In</h2>   
@@ -74,8 +74,10 @@
         return false;
     }
     else{
-        document.getElementById('ErrorMessage').innerHTML = "Cool! Good to go, buddy!";
-        document.getElementById('ErrorMessage').style.color = "#007700";
+        if(confirm('Save your username and password?')){
+            localStorage.setItem('Username',document.getElementById('Username').value);
+            localStorage.setItem('Password',document.getElementById('Password').value);
+        }
         return true;
     }
     }

@@ -69,21 +69,18 @@ body{
 
 /*== Summaries ==*/
 #summaries{
-  padding-bottom: 4rem;
-}
-
-.narrow{
-  width: 75%;
-  margin: 1.5rem auto;
+  padding-bottom: 2rem;
   padding-top: 2rem;
 }
 
-.narrow h1{
-  font-size: 2.4rem;
+#summaries .heading-underline{
+  margin-top: 2rem;
+  margin-bottom: 0;
 }
 
-.narrow img{
-  border-radius: 10%;
+.summaries img{
+  border-radius: 4rem; 
+  height:19vw;
 }
 
 .btn-secondary{
@@ -229,6 +226,10 @@ hr.socket{
   
   .caption h3{
     font-size: 1.2rem;
+  }
+
+  .summaries img{ 
+    height:19rem;
   }
 }
 

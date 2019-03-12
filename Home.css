@@ -22,7 +22,7 @@ body{
 
 .navbar-dark .navbar-nav .nav-link{
   color: white;
-  padding-top: .8rem;
+  padding-top: .8vw;
 }
 
 .navbar-dark .navbar-nav .nav-link.active,
@@ -68,6 +68,10 @@ body{
 }
 
 /*== Summaries ==*/
+#summaries{
+  padding-bottom: 4rem;
+}
+
 .narrow{
   width: 75%;
   margin: 1.5rem auto;

@@ -22,7 +22,7 @@ body{
 
 .navbar-dark .navbar-nav .nav-link{
   color: white;
-  padding-top: .8rem;
+  padding-top: .8vw;
 }
 
 .navbar-dark .navbar-nav .nav-link.active,

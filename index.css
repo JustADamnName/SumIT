@@ -2,6 +2,8 @@
 body{
     background-image: url(img/Sci-Fi-Science-Fiction-Planets-Alien-Sky-1920-x-1200.jpg);
     background-size: 100%;
+    background-position: center center;
+    overflow: hidden;
     font-family: Helvetica, sans-serif;
 }
 h2{
@@ -17,6 +19,7 @@ hr{
   border: 3px solid brown;
   margin-bottom: 2rem;
   width: 40%;
+  min-width: 40%;
 }
 
 #VerticalCenter{
@@ -92,6 +95,12 @@ hr{
  {
   background-position: 400%; /*Set ending position to the right most of the hidden background*/
  }
+}
+
+@media (max-width: 900px) {
+  body{
+    background-size: 900px;
+}
 }
   
   /*============ BOOTSTRAP BREAK POINTS:

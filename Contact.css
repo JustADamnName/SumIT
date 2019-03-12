@@ -35,7 +35,7 @@ body{
 #Title{
     font-size: 40px;
     color: white;
-    margin-top: 250px;
+    margin-top: 35vh;
     font-weight: bold;
 }
 #Paragraph{
@@ -53,7 +53,7 @@ body{
     padding: 2rem 2rem;
 }
 #FormBackground{
-    margin-top: 8.0rem;
+    margin-top: 18vh;
     box-shadow: -1px 1px 60px 10px rgb(124, 201, 236);
     background: rgba(80, 80, 80, 0.4);
     border-radius: 4rem;
@@ -67,7 +67,7 @@ hr{
 .LeftLabels{
     color: white;
     font-size: 16px;
-    margin-left: 2rem;
+    margin-left: 2.5vw;
     margin-top: 1rem;
 }
 .UserInput{
@@ -75,12 +75,17 @@ hr{
     border: 0;
     border-bottom: 1px solid white; 
     font-size: 16px;
-    width: 18.5rem;
+    width: 90%;
     margin-top: 1rem;
     color: white;
 }
 ::placeholder{
     color: white;
+}
+.FileButton{
+  width: 90%;
+  margin-top: 1rem;
+  color: white;
 }
 small{
     color: white;
@@ -92,8 +97,16 @@ option{
     /*Center text????*/
 }
 .btn{
-    margin: 0 11rem;
+    margin: 0 41%;
     margin-bottom: 2rem;
+}
+
+#LocateMe{
+  margin-top: 1rem;
+}
+
+#Location{
+  margin-top: 1rem;
 }
 
 @media (max-width: 768px) {
@@ -105,6 +118,11 @@ option{
       font-size: .8rem;
       letter-spacing: .1rem;
     }
+
+    /*Testing*/
+  .LeftLabels{
+      margin-left: 2.5rem;
+  }
 }
   
   /*============ BOOTSTRAP BREAK POINTS:

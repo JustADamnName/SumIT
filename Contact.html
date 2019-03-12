@@ -60,21 +60,21 @@
 
             <div id="FormBackground" class="col-md-5"> <!-- Start Registration Form -->
                 <div class="row FormHeading"> <!-- Start Form Heading-->
-                    <div class="col-md-10">
+                    <div class="col-md-10 col-sm-10 col-xs-9">
                         <h1 id="FormTitle">This, is me!</h1>
                     </div>
                     
-                    <div class="col-md-2">
+                    <div class="col-md-2 col-sm-2 col-xs-3">
                         <i class="fas fa-pencil-alt fa-2x" style="color: white; float: right"></i>
                     </div>
                     <hr>
                 </div> <!-- End Form Heading-->
 
                 <div class="row"> <!-- Start Email -->
-                    <div class="col-md-3">
+                    <div class="col-lg-3 col-md-4 col-sm-3 col-xs-3">
                         <label class="LeftLabels">Email</label>
                     </div>
-                    <div class="col-md-9">
+                    <div class="col-lg-9 col-md-8 col-sm-9 col-xs-9">
                         <input list="RMITemails" type="email" name="Email" class="UserInput" placeholder="Your E-mail">
                         <datalist id="RMITemails">
                             <option value="s1234567@rmit.edu.vn">
@@ -87,30 +87,30 @@
                 </div> <!-- End Email-->
 
                 <div class="row"> <!-- Begin Ideas-->
-                    <div class="col-md-3">
+                    <div class="col-lg-3 col-md-4 col-sm-3 col-xs-3">
                         <label class="LeftLabels">Ideas</label>
                     </div>
-                    <div class="col-md-9">
+                    <div class="col-lg-9 col-md-8  col-sm-9 col-xs-9">
                         <textarea class="UserInput" name="ideas" cols="30" rows="3" placeholder="Your ideas"></textarea>
                     </div>
                 </div> <!-- End Ideas -->
 
                 <div class="row"> <!-- Start Details -->
-                    <div class="col-md-3">
+                    <div class="col-lg-3 col-md-4 col-sm-3 col-xs-3">
                         <label class="LeftLabels">Details</label>
                     </div>
-                    <div class="col-md-9">
-                        <input type="file" name="Details" style="margin-top: 1rem; color: white">
+                    <div class="col-lg-9 col-md-8  col-sm-9 col-xs-9">
+                        <input class="FileButton" type="file" name="Details">
                     </div>
                 </div> <!-- End Details-->
 
                 <div class="row"> <!-- Start Location -->
-                    <div class="col-md-3">
+                    <div class="col-lg-3 col-md-4 col-sm-3 col-xs-3">
                         <label class="LeftLabels">Location</label>
                     </div>
-                    <div class="col-md-9">
-                        <button onclick="getLocation()" id="LocateMe" style="margin-top: 1rem">Locate me!</button>
-                        <p id="Location"  style="margin-top: 1rem"></p>
+                    <div class="col-lg-9 col-md-8  col-sm-9 col-xs-9">
+                        <button onclick="getLocation()" id="LocateMe">Locate me</button>
+                        <p id="Location"></p>
                     </div>
                 </div> <!-- End Location-->
                 

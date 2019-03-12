@@ -23,12 +23,11 @@ hr{
   min-width: 40%;
 }
 
-#VerticalCenter{
+#Center{
   min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
   min-height: 100vh; /* These two lines are counted as one :-)       */
 
   display: flex;
-  align-items: center;
 }
 
 #Form{
@@ -53,7 +52,7 @@ hr{
   margin-bottom: 1.5rem;
   margin-left: .5rem;
   height: 1.5rem;
-  width: 17rem;
+  flex: 1;
 }
 .UserInput::placeholder{
   color: rgb(132, 0, 255);

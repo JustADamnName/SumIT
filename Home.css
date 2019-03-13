@@ -230,6 +230,12 @@ hr.socket{
 
 @media (max-width: 768px) and (orientation: portrait){
   .summaries img{ 
+    height:10rem;
+  }
+}
+
+@media (max-width: 576px) and (orientation: portrait){
+  .summaries img{ 
     height:13rem;
   }
 }

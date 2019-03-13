@@ -134,8 +134,8 @@ body{
     margin-top: 3rem;
   }
   
-  /*== Resize t Tablets' size ==*/
-  @media (max-width: 768px){
+  /*== Resize to Tablets' size ==*/
+  @media (max-width: 770px){
   .navbar{
     font-size: .8rem;
   }
@@ -160,14 +160,12 @@ body{
   .narrow h1{
     font-size: 1.5rem;
   }
-  
+
   .testimonials img{
     max-width: 50%;
     display: block;
     margin: 0 auto;
   }
-
-
 }
   
   /*============ BOOTSTRAP BREAK POINTS:

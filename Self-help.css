@@ -32,7 +32,12 @@ body {
   color: #99f8f3;
   }
 
-/*Motivation*/
+/*Header*/
+.Header{
+  justify-content: center;
+  width: 100%;
+}
+
 .Header h1{
   color: rgb(255, 145, 0);
 }
@@ -41,6 +46,7 @@ body {
   color: rgb(0, 225, 255);
 }
 
+/*Motivation*/
 #motivation h2{
   color: red;
 }
@@ -55,6 +61,7 @@ body {
   padding-bottom: 3rem;
   text-align: center;
   margin-top: -2.5rem;
+  overflow: hidden;
 }
 #motivation .swiper-slide {
   background-size: cover;
@@ -89,5 +96,45 @@ body {
 @media (max-width: 768px) {
   .navbar{
     font-size: .8rem;
+  }
+
+  #music h3{
+    font-size: 1rem;
+    font-weight: bold;
+  }
+
+  #music .swiper-slide {
+    width: 280px;
+    height: 230px;
+    border-radius: 1rem;
+  }
+  
+  #music .img {
+    width: 280px;
+    height: 210px;
+    border-radius: 1rem 1rem 0 0;
+  }
+
+  #motivation h2{
+    font-size: 1rem;
+    font-weight: 600;
+  }
+
+  #motivation p{
+    font-size: .7rem;
+    margin-top: -.5rem;
+  }
+
+  #motivation img{
+    width: 175px;
+    height: 175px;
+    border-radius: 1rem 1rem 0 0;
+  }
+
+  #motivation .swiper-slide {
+    width: 175px;
+    height: 210px;
+    border-radius: 2rem;
+    font-weight: bold;
   }
 }

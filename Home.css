@@ -228,6 +228,11 @@ hr.socket{
   }
 }
 
+@media (max-width: 768px) and (orientation: portrait){
+  .summaries img{ 
+    height:13rem;
+  }
+}
 /*============ BOOTSTRAP BREAK POINTS:
 
 Extra small (xs) devices (portrait phones, less than 576px)

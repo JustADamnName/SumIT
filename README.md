@@ -4,7 +4,7 @@ A hobby website that I use to outsource my memory for the BIT degree, so I can s
 
 Additionally, it would also help others IT students to learn much more efficiently.
 
-## Features involved:
+## Features
 
 _ JavaScript is used to validate log-in details (username and password must both be >6 characters)
 
@@ -20,6 +20,6 @@ _ Data List in index.html and Contact.html to allow faster user input
 
 _ Flexbox + Media Queries to ensure all pages are perfectly responsive for all devices, whether landscape and portrait.
 _________________________________________________________________________________________________________________________
-## This assignment is from:
+## Assignment from
 
 Web Programming course
